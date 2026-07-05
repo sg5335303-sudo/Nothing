@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 id="text"></h1>
+
+<script>
+let message = "nothing.";
+let i = 0;
+
+function typeText() {
+  if (i < message.length) {
+    document.getElementById("text").innerHTML += message[i];
+    i++;
+    setTimeout(typeText, 200);
+  }
+}
+
+typeText();
+</script>
+
+</body>
+</html>
